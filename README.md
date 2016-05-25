@@ -1,13 +1,13 @@
 ## ruby vectorized array sum
 
-# What it does?
+#### What it does?
 It just adds up the numbers of an array using your CPU's vectorised intructions.
 
-# Why?
+#### Why?
 Just wanted to create a C extension for Ruby.
 It's 100% to learn, not really to solve a problem and probably buggy even if the code is quite small.
 
-# Benchmarks
+#### Benchmarks
 In order to run them you'll need to install the `benchmark-ips` gem.
 ```bash
 ▶ ruby benchmarks.rb
@@ -28,7 +28,7 @@ Comparison:
             r inject:        1.3 i/s - 4.40x slower
             r reduce:        0.9 i/s - 6.07x slower
 ```
-# Misc
+#### Misc
 - In order to compile it: generate the Makefile with `ruby extconf.rb`, `make` to build and you can easily import it with `require './fast_sum'`
 - Tests can be run with 
 `ruby tests.rb`
