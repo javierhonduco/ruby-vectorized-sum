@@ -50,6 +50,7 @@ tags
 
 
 ### Ruby ###
+Makefile
 *.gem
 *.rbc
 /.config
