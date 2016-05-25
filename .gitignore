@@ -80,6 +80,7 @@ build-iPhoneSimulator/
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 # vendor/Pods/
+*.bundle
 
 ## Documentation cache and generated files:
 /.yardoc/
