@@ -1,7 +1,7 @@
 ## ruby vectorized array sum
 
 #### What it does?
-It just adds up the numbers of an array using your CPU's vectorised intructions.
+It just adds up the numbers of an array using your CPU's vectorised instructions.
 
 #### Why?
 Just wanted to create a C extension for Ruby.
