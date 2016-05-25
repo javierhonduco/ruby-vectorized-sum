@@ -1,6 +1,7 @@
 require 'benchmark/ips'
 require './fast_sum'
 
+`make`
 n = 10_000_000
 array = Array.new(n){ rand(0..10_000_000) }
 fast = Fast.new
