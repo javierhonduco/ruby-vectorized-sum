@@ -25,5 +25,3 @@ class FastSumTest < Minitest::Test
     }
   end
 end
-
-
