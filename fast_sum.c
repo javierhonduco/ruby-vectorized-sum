@@ -12,7 +12,7 @@ vector_alloc(size_t ts, size_t n)
   size_t size = ts;
   size *= n;
   if(posix_memalign(&result, align, size)){
-    /* raise a exception */
+    rb_raise(rb_eStandardError, "Memory could not be aligned properly");
   }
   return result;
 }
