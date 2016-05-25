@@ -1,5 +1,4 @@
 #include <ruby.h>
-#include "extconf.h"
 
 #define max(a, b) ((a<b) ? a : b)
 
