@@ -53,6 +53,7 @@ sum(VALUE self, VALUE arg1)
       sum += vector_result[i];
     }
 
+    free(vector);
     return LONG2NUM(sum);
   }
 
