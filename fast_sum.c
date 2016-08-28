@@ -64,5 +64,5 @@ void
 Init_fast_sum()
 {
   VALUE fast_class = rb_define_class("Fast", rb_cObject);
-  rb_define_method(fast_class, "sum", sum, 1);
+  rb_define_singleton_method(fast_class, "sum", sum, 1);
 }
