@@ -4,7 +4,6 @@ require './fast_sum'
 `make`
 n = 10_000_000
 array = Array.new(n){ rand(0..10_000_000) }
-fast = Fast.new
 
 Benchmark.ips do |x|
   x.report('r reduce'){
@@ -20,7 +19,7 @@ Benchmark.ips do |x|
     array.inject(:+)
   }
   x.report('c'){
-    fast.sum(array)
+    Fast.sum(array)
   }
 
   x.compare!
